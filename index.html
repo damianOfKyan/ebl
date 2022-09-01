@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="shortcut icon" href="#">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="header">
+      <h1 class="title">Welcome to Book Library</h1>
+        <div class="top-buttons">
+           <button type="button" id="addNewBook" onclick="openForm()">Add New Book</button>
+           <button type="button" id="resetBooks">Reset All Books</button>
+
+           <div class="form-popup" id="bookForm">
+              <form id='form' class="form-container">
+                <div class="form-section">
+                  <label for="title">Title</label>
+                  <input id="formTitle" type="text" placeholder="Enter Title" required></input>
+              </div>
+                <div class="form-section">
+                  <label for="author">Author</label>
+                  <input id="formAuthor" type="text" placeholder="Enter Author" required></input>
+                </div>
+                <div class="form-section">
+                <label for="genre">Genre</label>
+                <input id="formGenre" type="text" placeholder="Enter Genre" required></input>
+              </div>
+              <div class="submit-button">
+                 <button id="formSubmit" class="btn" >Submit</button>
+              </div>
+              </form>
+
+        </div>
+    </div>
+  </div>
+
+  <div class='container'>
+  </div>
+
+  <script src="my-app.js"></script>
+
+</body>
+</html>
